@@ -8,11 +8,11 @@ import Link from "next/link";
 function Login() {
   return (
     <div className="justify-center flex items-center h-screen">
-      <Card className="p-5 min-w-xl md:min-w-2xl">
+      <Card className="p-5 m-4 w-screen  md:w-xl">
         <Logo className="text-center" />
         <div>
           <h1 className="font-bold text-2xl">Login</h1>
-          <p>wecome back</p>
+          <p>welcome back</p>
         </div>
         <form>
           <div className="mt-4">
@@ -38,9 +38,9 @@ function Login() {
             <Button className="w-full">Submit</Button>
           </div>
         </form>
-        <p>
+        <p className="text-center">
           Don't have an account?{" "}
-          <Link href={"register"} className="font-bold">
+          <Link href={"/register"} className="font-bold">
             Register now
           </Link>
         </p>
